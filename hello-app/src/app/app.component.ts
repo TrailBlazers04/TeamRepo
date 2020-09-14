@@ -12,7 +12,17 @@ import { Component } from '@angular/core';
       <h2>Hello World!!!!</h2>
       </div>
   `,
-  styles: []
+  styles: [
+    `h1{
+      font-family: verdana;
+      color: red;
+      
+    }
+    h2{
+      font-family: verdana;
+      color: red;
+    }`
+  ]
 })
 export class AppComponent {
   title = 'hello-app';
