@@ -17,9 +17,15 @@ private Mul arth;
 	}
 
 	@Test
-	public void testSum()
+	public void testmul()
 	{
 		assertEquals(24, arth.mul(4, 6));
+	}
+	
+	@Test
+	public void testmax()
+	{
+		assertEquals(24, arth.max(4, 6));
 	}
 
 }
