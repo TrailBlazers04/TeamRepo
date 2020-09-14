@@ -9,6 +9,8 @@ import { Component } from '@angular/core';
         Welcome to {{title}}!
       </h1>
       <h2>First Angular App on Jenkins</h2>
+      <h2>Hello World!!</h2>
+      </div>
   `,
   styles: []
 })
