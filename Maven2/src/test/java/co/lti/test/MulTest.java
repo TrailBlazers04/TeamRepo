@@ -25,7 +25,7 @@ private Mul arth;
 	@Test
 	public void testmax()
 	{
-		assertEquals(24, arth.max(4, 6));
+		assertEquals(6, arth.max(4, 6));
 	}
 
 }
