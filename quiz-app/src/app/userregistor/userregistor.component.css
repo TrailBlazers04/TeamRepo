@@ -1,4 +1,11 @@
-
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
 #btn {
     top: 0;
     left: 0;
@@ -46,6 +53,6 @@ span {
     bottom: 68px;
     position: absolute;
 }
-#login {
+#register {
     left: 50px;
 }
