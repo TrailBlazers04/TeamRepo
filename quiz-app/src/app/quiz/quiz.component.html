@@ -1,1 +1,16 @@
-<p>quiz works!</p>
+<form (ngSubmit) = 'loggedIn()'>
+    <table class = "table-border">
+        <tr><th colspan= "2">QUIZ</th></tr>
+        <tr><td>Choose exam</td>
+          <td><select name="exam" [(ngModel)]=quiz.exam>
+              <option *ngFor="let e of exams" [value]="e">{{ e }}</option>
+          </select></td>
+        </tr>
+        <tr><th><button type="submit">START</button></th>
+        </tr>
+    </table>
+</form>
+<div [hidden]="!flag">
+    <b>Exam Information</b>
+    Exam: {{quiz.exam}}
+</div>

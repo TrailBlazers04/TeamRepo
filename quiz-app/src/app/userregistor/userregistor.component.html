@@ -1,7 +1,49 @@
-<form id="register" class="input-group">
-    <input type="text" class="input-field" placeholder="User Id" requied>
-    <input type="email" class="input-field" placeholder="Email Id" required>
-    <input type="text" class="input-field" placeholder="Enter Password" required>
-    <input type="checkbox" class="check-box"><span>I agree to terms & conditions</span>
-    <button type="submit" class="submit-btn" routerLink="userlogin" routerLinkActive="active">Register</button>
-</form>
+<div class="row">
+    <div class="main">
+      <div class="card">
+        <h2 style="text-align: center;">Register first to login</h2>
+        <form> 
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Full name" name="uname">
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw">
+          
+              <label for="email"><b>Email Address</b></label>
+              <input type="email" placeholder="Enter Email Address" name="email">
+
+              <div class="input-group">
+    
+                <input class="form-control" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
+                
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button">📅</button>
+                </div>
+            
+              </div>
+              <hr />
+              <code>Model: {{ model | json }}</code>
+          
+              <label for="city"><b>City</b></label>
+              <input type="text" placeholder="Enter City" name="city">
+
+              <label for="state"><b>State</b></label>
+              <input type="text" placeholder="Enter State" name="state">
+          
+              <label for="mobile"><b>Mobile No.</b></label>
+              <input type="tel" placeholder="Enter Mobile Number" name="mobile">
+
+              <label for="qualification"><b>Qualification</b></label>
+              <input type="text" placeholder="Enter your Qualification" name="qualification">
+
+              <label for="yoc"><b>Year of Completion</b></label>
+              <input type="number" placeholder="Enter Year of Completion" name="yoc">
+            
+              <input type="checkbox" class="check-box"><span>I agree to terms & conditions</span>
+              <button type="submit" class="submit-btn" routerLink="userlogin" routerLinkActive="active">Register</button>
+            </div>
+          </form>
+      </div>
+    </div>
+  </div>

@@ -1,9 +1,26 @@
-
-<div class="main">
-    <form id="login" class="input-group">
-        <input type="text" class="input-field" placeholder="User Id" requied>
-        <input type="text" class="input-field" placeholder="Enter Password" required>
-        <input type="checkbox" class="check-box"><span>Remember Password</span>
-        <button type="submit" class="submit-btn" routerLink="quiz" routerLinkActive="active">Login</button>
-    </form>    
+<div class="row">
+    <div class="main">
+      <div class="card">
+        <h2 style="text-align: center;">Login to give your eaxam!</h2>
+        <form>
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname">
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw">
+          
+              <button type="submit" class="submit-btn" routerLink="quiz" routerLinkActive="active">Login</button>
+              <label>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+              </label>
+            </div>
+          
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+    </div>
+  </div>
 </div>
