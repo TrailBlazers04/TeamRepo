@@ -13,6 +13,7 @@ import { UserloginComponent } from './userlogin/userlogin.component';
 import { UserhomeComponent } from './userhome/userhome.component';
 import { ExamComponent } from './exam/exam.component';
 import { UserreportComponent } from './userreport/userreport.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { UserreportComponent } from './userreport/userreport.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

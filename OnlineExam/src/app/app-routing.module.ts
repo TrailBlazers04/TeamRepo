@@ -41,10 +41,11 @@ const routes: Routes = [
     path: 'userhome', 
     component: UserhomeComponent,
     children: [
-      { path: 'exam', component: ExamComponent },
+     
       { path: 'userreport', component: UserreportComponent }
     ]
   }
+  ,{path: 'exam', component: ExamComponent }
 ];
 
 @NgModule({
