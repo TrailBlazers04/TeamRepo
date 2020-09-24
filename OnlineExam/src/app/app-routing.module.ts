@@ -33,6 +33,7 @@ const routes: Routes = [
     path: 'user', 
     component: UserComponent,
     children: [
+      { path: '', redirectTo: 'userlogin', pathMatch: 'full' },
       { path: 'userlogin', component: UserloginComponent },
       { path: 'userregister', component: UserregisterComponent }
     ]
