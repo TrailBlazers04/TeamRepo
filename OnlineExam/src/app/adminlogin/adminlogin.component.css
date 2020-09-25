@@ -13,3 +13,11 @@ a {
   border-left: 4px solid rgba(145, 126, 126, 0.486);
   height: 60px;
 }
+
+#admlog{
+  background-image: url("src/assets/images/9.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-position: 50% 50%;
+  border-radius: 15px;
+}
