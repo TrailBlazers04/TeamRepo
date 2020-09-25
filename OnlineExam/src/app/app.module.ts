@@ -30,11 +30,9 @@ import { AboutComponent } from './about/about.component';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    ReactiveFormsModule,
-    NgbModule.forRoot()
-    
-    
-    
+    FormsModule,
+    NgbModule.forRoot(),
+    ReactiveFormsModule
   ],
   
   providers: [],
