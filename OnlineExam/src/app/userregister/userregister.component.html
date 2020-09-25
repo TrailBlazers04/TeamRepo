@@ -49,6 +49,7 @@
                   <label>State</label>
                   <select type="text" name="state" size="1" class="form-control" ngModel #state="ngModel" [ngClass]="{ 'is-invalid': f.submitted && state.invalid }" required>
                     <option value="" selected="selected">Select State</option>
+                    <option *ngFor="let state of states">{{ state }}</option>
                   </select>
                   <div *ngIf="f.submitted && state.invalid" class="invalid-feedback">
                       <div *ngIf="state.errors.required">State is required</div>
@@ -58,6 +59,7 @@
                   <label>City</label>
                   <select type="text" name="city" size="1" class="form-control" ngModel #city="ngModel" [ngClass]="{ 'is-invalid': f.submitted && city.invalid }" required>
                     <option value="" selected="selected">Select City</option>
+                    <option *ngFor="let city of cities">{{ city }}</option>
                   </select>
                   <div *ngIf="f.submitted && city.invalid" class="invalid-feedback">
                       <div *ngIf="city.errors.required">City is required</div>
@@ -68,6 +70,7 @@
               <label>Qualification</label>
               <select type="text" name="qualification" size="1" class="form-control" ngModel #qualification="ngModel" [ngClass]="{ 'is-invalid': f.submitted && qualification.invalid }" required>
                 <option value="" selected="selected">Your Qualification</option>
+                <option *ngFor="let qualification of qualifications">{{ qualification }}</option>
               </select>
               <div *ngIf="f.submitted && city.invalid" class="invalid-feedback">
                   <div *ngIf="city.errors.required">*required</div>
