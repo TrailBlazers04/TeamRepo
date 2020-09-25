@@ -1,1 +1,49 @@
-<p>setquestion works!</p>
+<div class="container">
+  
+    <h1>Add Question or remove one </h1>
+    
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+      
+      <p>
+        <label for="name">Type in the Question:</label>
+        <input type="text" id="name" name="name" formControlName="name" class="form-control">
+      </p>
+    
+      <table class="table table-bordered" formArrayName="Question">
+        <tr>
+          <th colspan="2">Add MCQ options:</th>
+          <th width="150px"><button type="button" (click)="addQuantity()" class="btn btn-primary">Add More</button></th>
+        </tr>
+        <tr *ngFor="let quantity of quantities().controls; let i=index" [formGroupName]="i">
+          <td>
+              Option 1 :
+              <input type="text" formControlName="option1" class="form-control">
+          </td>
+          <td>
+              Option 2:
+              <input type="text" formControlName="option2" class="form-control">
+          </td>
+          <td>
+            Option 3:
+            <input type="text" formControlName="option3" class="form-control">
+        </td>
+        <td>
+            Option 4:
+            <input type="text" formControlName="option4" class="form-control">
+        </td>
+          <td>
+              <button (click)="removeQuantity(i)" class="btn btn-danger">Remove Question</button>
+          </td>
+        </tr>
+      </table>
+     
+      <button type="submit" class="btn btn-success">Submit</button>
+      
+    </form>
+      
+    <br/>
+    {{this.productForm.value | json}}
+  </div>
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+

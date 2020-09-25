@@ -1,1 +1,21 @@
-<p>list works!</p>
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+            <th>Question</th>
+            <th>option1</th>
+            <th>option2</th>
+            <th>option3</th>
+            <th>option4</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let album of list; let i=index">
+            <td>{{ student.question }}</td>
+            <td>{{ student.option1 }}</td>
+            <td>{{ student.option2 }}</td>
+            <td>{{ student.option3 }}</td>
+            <td>{{ student.option4 }}</td>
+            <td><button class="btn btn-danger" (click)="delete(i)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
