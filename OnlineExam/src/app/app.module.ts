@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -30,7 +33,10 @@ import { UserreportComponent } from './userreport/userreport.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule, 
+    DropDownListModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     NgbModule.forRoot()
   ],
   providers: [],
