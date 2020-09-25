@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -11,17 +11,10 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  @HostListener('window:scroll', ['$event'])
-
-onWindowScroll(e) {
-    let element = document.querySelector('.navbar');
-    if (window.pageYOffset > element.clientHeight) {
-      element.classList.add('navbar-inverse');
-    } else {
-      element.classList.remove('navbar-inverse');
-    }
+  
   }
   
+  
+  
 
-}
+
