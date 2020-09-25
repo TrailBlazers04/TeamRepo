@@ -1,4 +1,17 @@
-.bodybg-color {
-    background-image: "./assets/baelen.jpg";
-    background-color: rgb(24, 21, 21);
+
+#r{
+    background-image: url("C:/Users/bsush/Desktop/4.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: 50% 50%;
+    border-radius: 15px;
+    
+  
 }
+
+.reg{
+    text-align: center;
+}
+
+
+
