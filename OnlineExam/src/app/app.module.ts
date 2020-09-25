@@ -16,11 +16,13 @@ import { UserhomeComponent } from './userhome/userhome.component';
 import { ExamComponent } from './exam/exam.component';
 import { UserreportComponent } from './userreport/userreport.component';
 import { FormsModule } from '@angular/forms';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    routingComponents
+    routingComponents,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
