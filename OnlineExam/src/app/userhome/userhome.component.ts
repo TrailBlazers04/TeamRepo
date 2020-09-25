@@ -4,13 +4,14 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-userhome',
   templateUrl: './userhome.component.html',
   styleUrls: ['./userhome.component.css']
-})
-export class UserhomeComponent implements OnInit {
+}) 
+export class UserhomeComponent implements OnInit { 
 
   constructor() { }
 
   ngOnInit() {
   }
+
   
 
 }
