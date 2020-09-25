@@ -33,6 +33,7 @@ const routes: Routes = [
     path: 'user', 
     component: UserComponent,
     children: [
+      { path: '', redirectTo: 'userlogin', pathMatch: 'full' },
       { path: 'userlogin', component: UserloginComponent },
       { path: 'userregister', component: UserregisterComponent }
     ]
@@ -41,10 +42,11 @@ const routes: Routes = [
     path: 'userhome', 
     component: UserhomeComponent,
     children: [
-      { path: 'exam', component: ExamComponent },
+     
       { path: 'userreport', component: UserreportComponent }
     ]
   }
+  ,{path: 'exam', component: ExamComponent }
 ];
 
 @NgModule({
