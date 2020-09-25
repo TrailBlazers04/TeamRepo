@@ -1,12 +1,59 @@
 
-<nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-primary" >
+<!-- <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-primary" >
   <div class="navbar-nav">
       <a class="nav-item nav-link" routerLink="/adminlogin">Admin</a>
       <a class="nav-item nav-link" routerLink="/user">User</a>
   </div>
 </nav>
 
-<!-- main app container -->
+
+<div class="jumbotron">
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-6 offset-sm-3">
+              <router-outlet></router-outlet>
+          </div>
+      </div>
+  </div>
+</div> -->
+
+
+<div class="wrapper">
+  <header>
+     <nav (scroll)="onWindowScroll($event);">
+        <div class="menu-icon">
+           <i class="fa fa-bars fa-2x"></i>
+        </div>
+        <div class="logo">
+          <h2 class="text-center font-weight-normal">Hack For Good</h2>
+        </div>
+        <div class="menu">
+           <ul>
+              <li><a href="#">Home</a></li>
+              
+              <li> <a class="nav-item nav-link" routerLink="/adminlogin">Admin</a></li>
+              <li><a class="nav-item nav-link" routerLink="/user">User</a></li>
+              <li><a href="#">About</a></li>
+              
+           </ul>
+        </div>
+     </nav>
+     </header>
+    
+  <div class="content">
+    <h3>Rules and Regulations</h3>
+     <p>
+      1. Only team entries are eligible, and team shall consist of three persons<br/>
+      2. The decision of the quiz-master will be final and will not be subjected to any change.<br/>
+      3. The participants shall not be allowed to use mobile or other electronic instruments.<br/>
+      4. The questions shall be in the form of multiple choice, True / False statement, Specificanswer question etc.<br/>
+      5. Audience/Supporters shall not give any hints or clues to the competitors.<br/>
+      6. Replacement of any participant of a team is not allowed after registration
+      
+     </p>
+  </div>
+</div>
+
 <div class="jumbotron">
   <div class="container">
       <div class="row">
@@ -16,3 +63,4 @@
       </div>
   </div>
 </div>
+
