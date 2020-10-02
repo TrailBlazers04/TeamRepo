@@ -15,11 +15,9 @@ import com.lti.entity.JavaQ;
 import com.lti.service.JavaService;
 
 
-
-
-
 @RestController
 public class JavaRestController {
+	// url to access http://localhost:8080/onlineExamBack/rest
 	
 	@Autowired
 	private JavaService service;

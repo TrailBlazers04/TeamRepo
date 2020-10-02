@@ -18,11 +18,11 @@ public class JavaQ {
 	private int qno;
 	@Column(length = 30)
 	private String question;
-	private int o1;
-	private int o2;
-	private int o3;
-	private int o4;
-	private int co;
+	private String option1;
+	private String option2;
+	private String option3;
+	private String option4;
+	private String correctans;
 	public int getQno() {
 		return qno;
 	}
@@ -35,36 +35,37 @@ public class JavaQ {
 	public void setQuestion(String question) {
 		this.question = question;
 	}
-	public int getO1() {
-		return o1;
+	public String getOption1() {
+		return option1;
 	}
-	public void setO1(int o1) {
-		this.o1 = o1;
+	public void setOption1(String option1) {
+		this.option1 = option1;
 	}
-	public int getO2() {
-		return o2;
+	public String getOption2() {
+		return option2;
 	}
-	public void setO2(int o2) {
-		this.o2 = o2;
+	public void setOption2(String option2) {
+		this.option2 = option2;
 	}
-	public int getO3() {
-		return o3;
+	public String getOption3() {
+		return option3;
 	}
-	public void setO3(int o3) {
-		this.o3 = o3;
+	public void setOption3(String option3) {
+		this.option3 = option3;
 	}
-	public int getO4() {
-		return o4;
+	public String getOption4() {
+		return option4;
 	}
-	public void setO4(int o4) {
-		this.o4 = o4;
+	public void setOption4(String option4) {
+		this.option4 = option4;
 	}
-	public int getCo() {
-		return co;
+	public String getCorrectans() {
+		return correctans;
 	}
-	public void setCo(int co) {
-		this.co = co;
+	public void setCorrectans(String correctans) {
+		this.correctans = correctans;
 	}
+	
 	
 	
 	
