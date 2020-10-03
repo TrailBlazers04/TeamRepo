@@ -18,11 +18,29 @@ public class JavaQ {
 	private int qno;
 	@Column(length = 30)
 	private String question;
+<<<<<<< HEAD
 	private String o1;
 	private String o2;
 	private String o3;
 	private String o4;
 	private String co;
+=======
+	
+	@Column(length = 5)
+	private String o1;
+	
+	@Column(length = 5)
+	private String o2;
+	
+	@Column(length = 5)
+	private String o3;
+	
+	@Column(length = 5)
+	private String o4;
+	
+	
+	private int co;
+>>>>>>> a6ab22d76317ed8fc36ec34e6a21c948348accaa
 	
 	public int getQno() {
 		return qno;
