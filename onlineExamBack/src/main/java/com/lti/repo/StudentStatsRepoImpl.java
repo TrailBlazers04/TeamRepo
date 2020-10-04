@@ -42,6 +42,17 @@ public class StudentStatsRepoImpl implements StudentStatsRepo {
 		em.remove(em.find(StudentStats.class,id));
 		
 	}
+<<<<<<< HEAD
 	
 
 }
+=======
+
+	public void delete(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}
+>>>>>>> f31c99e24c390bfe09f5955571e1de303df9fdec

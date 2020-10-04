@@ -15,16 +15,30 @@ public class StudentStats {
 	@Id
 	@GeneratedValue
 	private int id;
+<<<<<<< HEAD
 	@Column(length = 3)
 	private int java_marks;
 	@Column(length = 3)
 	private int sql_marks;
+=======
+	
+	@Column(length = 3)
+	private int java_marks;
+	
+	@Column(length = 3)
+	private int sql_marks;
+	
+>>>>>>> f31c99e24c390bfe09f5955571e1de303df9fdec
 	@Column(length = 3)
 	private int jquery_marks;
 	
 	@OneToOne
+<<<<<<< HEAD
 	@JoinColumn(name ="sid")
 	
+=======
+	@JoinColumn(name ="user_id")
+>>>>>>> f31c99e24c390bfe09f5955571e1de303df9fdec
 	private StudentDetails s;
 	
 	
@@ -63,4 +77,8 @@ public class StudentStats {
 	
 	
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f31c99e24c390bfe09f5955571e1de303df9fdec

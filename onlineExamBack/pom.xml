@@ -17,6 +17,17 @@
   		<version>5.2.5.RELEASE</version>
   	</dependency>
   	<dependency>
+  		<groupId>junit</groupId>
+  		<artifactId>junit</artifactId>
+  		<version>4.12</version>
+  	</dependency>
+  	<dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-test</artifactId>
+    	<version>5.2.5.RELEASE</version>
+    	<scope>test</scope>
+	</dependency>
+  	<dependency>
   	<groupId>com.fasterxml.jackson.core</groupId>
   	<artifactId>jackson-databind</artifactId>
   	<version>2.9.5</version></dependency>
@@ -50,6 +61,7 @@
     		<artifactId>ojdbc6</artifactId>
    			 <version>11.2.0.4</version>
 	</dependency>
+<<<<<<< HEAD
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -60,6 +72,13 @@
 			<artifactId>spring-test</artifactId>
 			<version>5.2.5.RELEASE</version>
 		</dependency>
+=======
+	<dependency>
+  		<groupId>junit</groupId>
+ 		 <artifactId>junit</artifactId>
+  		<version>4.12</version>
+  		</dependency>
+>>>>>>> f31c99e24c390bfe09f5955571e1de303df9fdec
 	 
 	 </dependencies>
 </project>
