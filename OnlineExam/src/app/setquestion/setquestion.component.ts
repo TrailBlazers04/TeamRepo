@@ -1,6 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormGroup, FormControl, FormArray, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ModalDirective } from 'ngx-bootstrap';
+import { QuestionClass } from '../exam/question-class';
+import { AddQuestionServiceService } from '../services/add-question-service.service';
 
 @Component({
   selector: 'app-setquestion',
@@ -8,37 +11,34 @@ import { Router } from '@angular/router';
   styleUrls: ['./setquestion.component.css']
 })
 export class SetquestionComponent implements OnInit {
-  name = 'Angular';
-  
-  productForm: FormGroup;
-
-  constructor(private fb:FormBuilder) {
-    this.productForm = this.fb.group({
-      name: '',
-      quantities: this.fb.array([]) ,
-    });
-   }
-   quantities() : FormArray {
-    return this.productForm.get("quantities") as FormArray
-  }
-   
-  newQuantity(): FormGroup {
-    return this.fb.group({
-      qty: '',
-      price: '',
-    })
-  }
-   
-  addQuantity() {
-    this.quantities().push(this.newQuantity());
+  questionObj = new QuestionClass();
+	@ViewChild('addQuestionModal', { static: true }) addQuestionModal : ModalDirective;
+  constructor(private addQ : AddQuestionServiceService) {
     
-  }
+   }
+   addQuestion(){
+		this.addQuestionModal.show();
+	}
    
-  removeQuantity(i:number) {
-    this.quantities().removeAt(i);
-  }
+  submitAddQuestion(){
+		let quesTemp = JSON.parse(JSON.stringify(this.questionObj));
+		
+    this.addQuestionModal.hide();
+    console.log(this.questionObj);
+
+    this.addQ.communicateObject(this.questionObj);
+
+
+
+	}
+   
+ 
+   
+ 
 
   ngOnInit() {
+
+
   }
 
 }

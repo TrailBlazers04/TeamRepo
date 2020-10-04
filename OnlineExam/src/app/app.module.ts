@@ -18,6 +18,9 @@ import { ExamComponent } from './exam/exam.component';
 import { UserreportComponent } from './userreport/userreport.component';
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+import { ModalModule } from 'ngx-bootstrap';
 
 
 @NgModule({
@@ -29,10 +32,13 @@ import { AboutComponent } from './about/about.component';
   imports: [
     BrowserModule,
     FormsModule,
+    ToastrModule.forRoot(),
     AppRoutingModule,
     FormsModule,
     NgbModule.forRoot(),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    ModalModule.forRoot()
   ],
   
   providers: [],
