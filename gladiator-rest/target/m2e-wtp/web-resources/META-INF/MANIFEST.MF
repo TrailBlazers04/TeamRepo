@@ -1,5 +1,9 @@
 Manifest-Version: 1.0
+<<<<<<< HEAD
 Built-By: bsush
+=======
+Built-By: saisu
+>>>>>>> 5d2a90c7ccd50c5297cb1bf99abb9562382ef9f6
 Build-Jdk: 1.8.0_261
 Created-By: Maven Integration for Eclipse
 
