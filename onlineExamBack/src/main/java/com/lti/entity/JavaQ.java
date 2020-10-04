@@ -18,6 +18,13 @@ public class JavaQ {
 	private int qno;
 	@Column(length = 30)
 	private String question;
+<<<<<<< HEAD
+	private String o1;
+	private String o2;
+	private String o3;
+	private String o4;
+	private String co;
+=======
 	
 	@Column(length = 5)
 	private String o1;
@@ -33,6 +40,7 @@ public class JavaQ {
 	
 	
 	private int co;
+>>>>>>> a6ab22d76317ed8fc36ec34e6a21c948348accaa
 	
 	public int getQno() {
 		return qno;
@@ -70,15 +78,11 @@ public class JavaQ {
 	public void setO4(String o4) {
 		this.o4 = o4;
 	}
-	public int getCo() {
+	public String getCo() {
 		return co;
 	}
-	public void setCo(int co) {
+	public void setCo(String co) {
 		this.co = co;
 	}
 	
-	
-	
-	
-
 }
