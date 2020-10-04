@@ -21,6 +21,7 @@ import { AboutComponent } from './about/about.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { ModalModule } from 'ngx-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { ModalModule } from 'ngx-bootstrap';
     ToastrModule.forRoot(),
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
     NgbModule.forRoot(),
     ReactiveFormsModule,
     BrowserAnimationsModule,
