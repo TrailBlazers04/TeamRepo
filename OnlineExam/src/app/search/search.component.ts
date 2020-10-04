@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 import { FormGroup, FormControl, Validators} from '@angular/forms';
+import { User } from '../user';
+import { AdminService } from '../services/admin.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-search',
@@ -8,26 +11,27 @@ import { FormGroup, FormControl, Validators} from '@angular/forms';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
-  websiteList: any = ['JAVA', 'SQL', 'Python']
-  websiteList1: any = ['Maharastra','West Bengal', 'Karnataka','Tamil Nadu','Odisha','Andra Pradesh']
-  websiteList2: any = ['Mumbai','Kolkata', 'Bangalore','Chennai','Bhubaneswar','Hyderabad']
-  websiteList3: any = ['50','60', '70','80','90']
+
+  technologies = [ "JAVA", "SQL", "JQuery" ];
   
-  form = new FormGroup({
-    website: new FormControl('', Validators.required)
-  });
-  constructor() { }
+  states = [ "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar",  "Chhattisgarh",
+              "Goa",  "Gujarat",  "Haryana", "Himachal Pradesh" ];
+  
+  cities = ["Delhi", "Agra", "Kolkata", "Mumbai", "Bangalore", "Hyderabad", "Patna", "Jaipur",
+              "Chennai"  ];
+ 
+  user = new User();
+
+  constructor(private _service : AdminService, private _router : Router) { }
 
   ngOnInit() {
   }
-  get f(){
-    return this.form.controls;
+  
+   form(){
+    this._service.searchUserFromRemote(this.user).subscribe(data => this.user = data);
+      }
+     
+    
   }
   
-  submit(){
-    console.log(this.form.value);
-  }
-  changeWebsite(e) {
-    console.log(e.target.value);
-  }
-}
+

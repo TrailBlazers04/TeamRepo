@@ -18,6 +18,7 @@ import { ExamComponent } from './exam/exam.component';
 import { UserreportComponent } from './userreport/userreport.component';
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { AboutComponent } from './about/about.component';
     AppRoutingModule,
     FormsModule,
     NgbModule.forRoot(),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   
   providers: [],
