@@ -8,8 +8,8 @@
 		<properties>
 			       <property name="hibernate.connection.driver_class" value="oracle.jdbc.OracleDriver"/>
         <property name="hibernate.connection.url" value="jdbc:oracle:thin:@localhost:1521:orcl"/>
-        <property name="hibernate.connection.username" value="ayan"/>
-        <property name="hibernate.connection.password" value="majumder"/> 
+        <property name="hibernate.connection.username" value="hr"/>
+        <property name="hibernate.connection.password" value="sai"/> 
        <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect" />
 		<property name="hibernate.show_sql" value="true"/>
 		<property name="hibernate.hbm2ddl.auto" value="update"/>
