@@ -39,7 +39,7 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     NgbModule.forRoot(),
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
     BrowserAnimationsModule,
     ModalModule.forRoot()
   ],
